@@ -9,7 +9,6 @@ import java.util.UUID;
 public abstract class Product implements Searchable {
     private final UUID id;
     public abstract boolean isSpecial();
-
     private final String productName;
 
     public Product(UUID id, String productName) {
