@@ -7,7 +7,6 @@ import java.util.List;
 public class UserBasket {
     private final List<BasketItem> items;
     private final double total;
-    private ProductBasket productBasket;
 
     public UserBasket(List<BasketItem> items, double total) {
         this.items = items;

@@ -22,7 +22,7 @@ public class BasketService {
 
     public void addProductToBasket(UUID id) {
         storageService.getProductById(id)
-                .orElseThrow(() -> new NoSuchElementException("Товар не найден"));
+                .orElseThrow(() -> new IllegalArgumentException("Product not found"));
         productBasket.addProductToBasket(id);
     }
 
